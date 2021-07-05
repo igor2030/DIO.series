@@ -33,25 +33,16 @@ namespace DIO.Series
             return retorno;
         }
 
-        public string retornaTitulo()
-        {
-            return this.Titulo;
-        }
+        public string retornaTitulo() => this.Titulo;
+        
 
+        public int RetornaId() => this.Id;
+        
 
-        public int RetornaId()
-        {
-            return this.Id;
-        }
+        public bool RetornaExcluido() => this.Excluido;
+       
 
-        public bool RetornaExcluido()
-        {
-            return this.Excluido;
-        }
-
-        public void Excluir()
-        {
-            this.Excluido = true;
-        }
+        public void Excluir() => this.Excluido = true;
+        
     }
 }
